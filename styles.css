@@ -13,6 +13,7 @@ body{
     grid-template-columns: 1fr 4fr;
 }
 
+/* DASHBOARD */
 .dashboard{
     grid-column: 1/2;
     grid-row: 1/-1;
@@ -27,7 +28,15 @@ body{
     font-size: 20px;
     font-family: var(--font-family);
     font-weight: 700;
+    font-size: 30px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.dashboard-logo{
+    fill:white;
 }
 .dashboard-nav{
     display:flex;
@@ -56,3 +65,86 @@ body{
     font-weight: 700;
 }
 
+
+/* MAIN */
+
+
+.main{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    display:flex;
+    flex-direction: column;
+}
+
+/* MAIN-TOP */
+.main-top{
+    height: 20%;
+    width: 1fr;
+    display:grid;
+    grid-template-rows: 1fr 1.3fr;
+    padding:18px;
+    z-index:2;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-profile{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SEARCH BAR */
+.search-bar{
+    display:flex;
+    gap:10px;
+    height:50px;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.search-bar > img{
+    align-items: center;
+}
+
+input#search-bar{
+    width: 400px;
+    height: 30px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.greetings-buttons{
+    grid-row:2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Profile */
+
+.profile{
+    display:flex;
+    height: 50px;
+    gap:20px;
+    align-items: center;
+}
+
+.notification > img{
+    height:0;
+    min-height:50%;
+}
+
+.profile-icon > img {
+    object-fit: contain;
+    height:0;
+    min-height:100%;
+    
+}
+/* MAIN BOTTOM */
+
+
+.main-bottom {
+    width: 100%;
+    flex:1;
+    background-color: #e2e8f0;
+}
